@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.sharehome.usercenter.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="top.sharehome.usercenter.model.entity.User">
+        <!--@mbg.generated-->
+        <!--@Table user_center.t_user-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="user_account" jdbcType="VARCHAR" property="userAccount"/>
+        <result column="user_password" jdbcType="VARCHAR" property="userPassword"/>
+        <result column="user_role" jdbcType="INTEGER" property="userRole"/>
+        <result column="user_avatar_url" jdbcType="VARCHAR" property="userAvatarUrl"/>
+        <result column="user_gender" jdbcType="TINYINT" property="userGender"/>
+        <result column="user_phone" jdbcType="VARCHAR" property="userPhone"/>
+        <result column="user_email" jdbcType="VARCHAR" property="userEmail"/>
+        <result column="user_states" jdbcType="INTEGER" property="userStates"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="is_deleted" jdbcType="TINYINT" property="isDeleted"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id,
+        user_name,
+        user_account,
+        user_password,
+        user_role,
+        user_avatar_url,
+        user_gender,
+        user_phone,
+        user_email,
+        user_states,
+        create_time,
+        update_time,
+        is_deleted
+    </sql>
+</mapper>

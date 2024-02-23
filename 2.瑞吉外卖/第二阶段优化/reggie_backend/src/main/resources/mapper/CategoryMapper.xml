@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.sharehome.reggie.mapper.CategoryMapper">
+    <resultMap id="BaseResultMap" type="top.sharehome.reggie.entity.Category">
+        <!--@mbg.generated-->
+        <!--@Table reggie.category-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="type" jdbcType="INTEGER" property="type"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="sort" jdbcType="INTEGER" property="sort"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="create_user" jdbcType="BIGINT" property="createUser"/>
+        <result column="update_user" jdbcType="BIGINT" property="updateUser"/>
+        <result column="is_deleted" jdbcType="INTEGER" property="isDeleted"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id,
+        `type`,
+        `name`,
+        sort,
+        create_time,
+        update_time,
+        create_user,
+        update_user,
+        is_deleted
+    </sql>
+</mapper>

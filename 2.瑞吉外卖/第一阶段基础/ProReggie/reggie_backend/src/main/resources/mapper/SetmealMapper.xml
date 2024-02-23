@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.sharehome.reggie.mapper.SetmealMapper">
+  <resultMap id="BaseResultMap" type="top.sharehome.reggie.entity.Setmeal">
+    <!--@mbg.generated-->
+    <!--@Table reggie.setmeal-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="category_id" jdbcType="BIGINT" property="categoryId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_user" jdbcType="BIGINT" property="createUser" />
+    <result column="update_user" jdbcType="BIGINT" property="updateUser" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, category_id, `name`, price, `status`, code, description, image, create_time, 
+    update_time, create_user, update_user, is_deleted
+  </sql>
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.sharehome.reggie.mapper.ShoppingCartMapper">
+    <resultMap id="BaseResultMap" type="top.sharehome.reggie.entity.ShoppingCart">
+        <!--@mbg.generated-->
+        <!--@Table reggie.shopping_cart-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="image" jdbcType="VARCHAR" property="image"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="dish_id" jdbcType="BIGINT" property="dishId"/>
+        <result column="setmeal_id" jdbcType="BIGINT" property="setmealId"/>
+        <result column="dish_flavor" jdbcType="VARCHAR" property="dishFlavor"/>
+        <result column="number" jdbcType="INTEGER" property="number"/>
+        <result column="amount" jdbcType="DECIMAL" property="amount"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="is_deleted" jdbcType="INTEGER" property="isDeleted"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id,
+        `name`,
+        image,
+        user_id,
+        dish_id,
+        setmeal_id,
+        dish_flavor,
+        `number`,
+        amount,
+        create_time,
+        is_deleted
+    </sql>
+</mapper>

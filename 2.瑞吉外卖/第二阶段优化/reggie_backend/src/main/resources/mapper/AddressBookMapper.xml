@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.sharehome.reggie.mapper.AddressBookMapper">
+    <resultMap id="BaseResultMap" type="top.sharehome.reggie.entity.AddressBook">
+        <!--@mbg.generated-->
+        <!--@Table reggie.address_book-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="consignee" jdbcType="VARCHAR" property="consignee"/>
+        <result column="sex" jdbcType="TINYINT" property="sex"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="province_code" jdbcType="VARCHAR" property="provinceCode"/>
+        <result column="province_name" jdbcType="VARCHAR" property="provinceName"/>
+        <result column="city_code" jdbcType="VARCHAR" property="cityCode"/>
+        <result column="city_name" jdbcType="VARCHAR" property="cityName"/>
+        <result column="district_code" jdbcType="VARCHAR" property="districtCode"/>
+        <result column="district_name" jdbcType="VARCHAR" property="districtName"/>
+        <result column="detail" jdbcType="VARCHAR" property="detail"/>
+        <result column="label" jdbcType="VARCHAR" property="label"/>
+        <result column="is_default" jdbcType="BOOLEAN" property="isDefault"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="create_user" jdbcType="BIGINT" property="createUser"/>
+        <result column="update_user" jdbcType="BIGINT" property="updateUser"/>
+        <result column="is_deleted" jdbcType="INTEGER" property="isDeleted"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id,
+        user_id,
+        consignee,
+        sex,
+        phone,
+        province_code,
+        province_name,
+        city_code,
+        city_name,
+        district_code,
+        district_name,
+        detail,
+        `label`,
+        is_default,
+        create_time,
+        update_time,
+        create_user,
+        update_user,
+        is_deleted
+    </sql>
+</mapper>

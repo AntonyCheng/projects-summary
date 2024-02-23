@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.sharehome.reggie.mapper.OrdersMapper">
+    <resultMap id="BaseResultMap" type="top.sharehome.reggie.entity.Orders">
+        <!--@mbg.generated-->
+        <!--@Table reggie.orders-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="number" jdbcType="VARCHAR" property="number"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="address_book_id" jdbcType="BIGINT" property="addressBookId"/>
+        <result column="order_time" jdbcType="TIMESTAMP" property="orderTime"/>
+        <result column="checkout_time" jdbcType="TIMESTAMP" property="checkoutTime"/>
+        <result column="pay_method" jdbcType="INTEGER" property="payMethod"/>
+        <result column="amount" jdbcType="DECIMAL" property="amount"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="consignee" jdbcType="VARCHAR" property="consignee"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id,
+        `number`,
+        `status`,
+        user_id,
+        address_book_id,
+        order_time,
+        checkout_time,
+        pay_method,
+        amount,
+        remark,
+        phone,
+        address,
+        user_name,
+        consignee
+    </sql>
+</mapper>

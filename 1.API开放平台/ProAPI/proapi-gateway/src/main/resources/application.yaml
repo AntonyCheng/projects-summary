@@ -1,0 +1,28 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: proapi-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: api_route
+        uri: http://localhost:8081
+        predicates:
+          - Path=/api/**
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway:
+            trace
+dubbo:
+  application:
+    name: proapi-gateway
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848

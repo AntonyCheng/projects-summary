@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentParamGroup">
+    <option name="className" value="top.sharehome.reggie.controller.SetmealController" />
+    <option name="method" value="list" />
+    <option name="module" value="reggie_backend" />
+    <option name="originUrl" value="/setmeal/list" />
+    <option name="requestParamMap">
+      <map>
+        <entry key="categoryId">
+          <value>
+            <Object />
+          </value>
+        </entry>
+        <entry key="status">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="returnDocument" value="{&#10;&#9;&quot;code&quot;:&quot;No comment,Type =Number&quot;,&#10;&#9;&quot;msg&quot;:&quot;No comment,Type =String&quot;,&#10;&#9;&quot;data&quot;:{}&#10;}" />
+    <option name="url" value="/setmeal/list" />
+  </component>
+</project>

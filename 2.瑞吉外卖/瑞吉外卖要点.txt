@@ -1,0 +1,17 @@
+1.统一返回值
+
+2.Threadlocal对象的运用
+
+3.集中序列化与反序列化（ObjectMapper类的继承应用）
+
+4.Mybatis-Plus搭配自动填充（MetaObjectHandler接口的实现应用）
+
+5.RedisTemplate和Spring Cache的运用
+
+6.@Transaction注解的运用
+
+7.阿里云短信服务
+
+8.Mysql主从分离
+
+9.网关（SpringCloud Gateway）

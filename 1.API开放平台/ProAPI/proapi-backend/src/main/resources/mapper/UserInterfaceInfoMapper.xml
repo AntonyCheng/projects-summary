@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.sharehome.project.mapper.UserInterfaceInfoMapper">
+  <resultMap id="BaseResultMap" type="top.sharehome.procommon.model.UserInterfaceInfo">
+    <!--@mbg.generated-->
+    <!--@Table user_interface_info-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="userId" jdbcType="BIGINT" property="userId" />
+    <result column="interfaceInfoId" jdbcType="BIGINT" property="interfaceInfoId" />
+    <result column="totalNum" jdbcType="INTEGER" property="totalNum" />
+    <result column="leftNum" jdbcType="INTEGER" property="leftNum" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="isDeleted" jdbcType="TINYINT" property="isDeleted" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, userId, interfaceInfoId, totalNum, leftNum, `status`, isDeleted, createTime, 
+    updateTime
+  </sql>
+
+  <select id="listTopInvokeInterfaceInfo" resultMap="BaseResultMap">
+        select interfaceInfoId, sum(totalNum) as totalNum from user_interface_info group by interfaceInfoId
+        order by totalNum desc limit 3
+  </select>
+</mapper>

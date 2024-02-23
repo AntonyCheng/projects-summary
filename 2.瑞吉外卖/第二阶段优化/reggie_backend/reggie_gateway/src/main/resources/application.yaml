@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reggie_gateway
+  cloud:
+    gateway:
+      routes:
+        - id: reggie_route
+          uri: http://120.46.214.246:9001
+          predicates:
+            - Path=/**
